@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="feedback-form">
+        <div class="feedback-form__burger">
+            <button><img src="img/close.png" alt="" /></button>
+        </div>
+        <div class="feedback-form__container">
+            <h2>Обратная связь</h2>
+            <form action="#" method="post">
+                <input type="text" id="name" name="name" placeholder="Имя" required />
+                <input type="tel" id="phone" name="phone" placeholder="Телефон" required />
+                <input type="email" id="email" name="email" placeholder="Электронная почта" required />
+                <textarea id="message" name="message" rows="4" placeholder="Сообщение" required></textarea>
+            </form>
+            <p class="feedback-form__text">
+                Нажимая “отправить”, вы даете согласие <br />
+                на <span>обработку персональных данных</span> и <br />
+                соглашаетесь с нашей<span>политикой<br />конфиденциальности</span>
+            </p>
+            <button class="feedback-form__button" type="submit">
+                <img src="img/Group 10.png" alt="" />
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>

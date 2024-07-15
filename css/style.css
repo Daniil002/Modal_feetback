@@ -1,0 +1,119 @@
+.feedback-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    height: 100%;
+
+}
+
+button {
+    all: unset; /* Убираем все стили */
+    display: inline-block; /* Восстанавливаем отображение */
+    cursor: pointer; /* Указываем, что это кликабельный элемент */
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 40px;
+    position: relative;
+}
+
+h2::before {
+    content: "";
+    position: absolute;
+    background-image: url('img/highlight.png');
+    width: 4px;
+    height: 40px;
+    top: 0; /* Установили верхнюю позицию */
+    left: -10px; /* Установили левую позицию, подправь это значение, если нужно */
+    
+}
+
+input, textarea {
+    margin-bottom: 16px;
+    padding: 10px;
+    font-size: 16px;
+    width: 288px;
+    height: 48px;
+    box-sizing: border-box;
+    border-radius: 8px; /* Скругляем края */
+    border: 1px solid #ccc; /* Добавим границу, чтобы было видно скругление */
+}
+
+
+textarea {
+    height: 118px;
+}
+
+.feedback-form__text {
+    margin-top: 0px;
+    color: rgb(126, 126, 130);
+}
+
+
+
+.feedback-form__text span {
+    color: rgb(255, 62, 121);
+}
+
+
+.feedback-form__button {
+    margin-left: 164px;
+    width: 150px;
+    background: none; /* Убираем фоновое изображение или цвет */
+    border: none; /* Убираем границу */
+    padding: 0; /* Убираем внутренние отступы */
+    cursor: pointer; /* Указываем, что элемент кликабелен */
+}
+
+
+@media (min-width: 720px) {
+    .feedback-form {
+        width: 440px;
+    }
+
+    .feedback-form__container {
+        margin-left: 32px;
+    }
+
+    input, textarea {
+        width: 376px;
+    }
+
+    .feedback-form__button {
+        margin-left: 250px;
+
+    }
+
+    .feedback-form__burger {
+        position: absolute;
+        left: -70px;
+        top: 30px;
+    }
+
+    h2 {
+        margin-top: 20px;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+        z-index: -1; /* Помещаем его под форму */
+    }
+
+
+    
+
+}
+
+
